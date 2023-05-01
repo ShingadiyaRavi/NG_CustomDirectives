@@ -1,0 +1,47 @@
+<h1>Directive : This is Component</h1>
+
+<hr><hr>
+<h1>Directive : Structural</h1>
+<h3>ngIF</h3>
+<p *ngIf="status">ngIf true then display it...</p>
+<p *ngIf="!status">ngIf false then display it...</p>
+<hr>
+<h3>ngFor</h3>
+<ul>
+  <li *ngFor="let item of items">
+    {{item.name}}
+  </li>
+</ul>
+<hr>
+
+<h3>ngSwitch</h3>
+<select (change)="getName($event)">
+  <option>Please Select Your Name</option>
+  <option *ngFor="let item of items" [value]="item.name">{{item.name}}</option>
+</select>
+
+<div [ngSwitch]="selectedName">
+  <h3 *ngSwitchCase="selectedName">You Select : {{ selectedName }}</h3>
+</div>
+
+<hr><hr>
+<h1>Directive : Attributes</h1>
+<h3>ngStyle</h3>
+<p [ngStyle]="{'color':'red','backgroundColor':'black','padding':'10px'}">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vitae alias esse inventore quisquam quaerat voluptas hic error vero expedita ad cupiditate, facere odit voluptatem, odio nam dolorum dolore libero?
+</p>
+<hr>
+
+
+<h3>ngClass</h3>
+<div>
+
+</div>
+<p [ngClass]="['color bg']">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur veritatis eos recusandae nulla natus minus fugit repellat mollitia! Molestiae minima ullam dolore exercitationem dolor possimus aliquid voluptate sint cumque in.
+</p>
+
+
+<hr><hr>
+<h1>Directives : Custom</h1>
+<h3 appStyleText>Using Custom Directive!</h3>

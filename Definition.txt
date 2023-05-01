@@ -1,0 +1,12 @@
+Task - 08
+Directives :
+	- Component
+	- Structural(ngIf,ngFor,ngSwitch)
+	- Attributes(ngClass, ngStyle)
+
+
+	Custom Directives : The Directives means we want to display data in condition base then we need to used directives. Angular provide some directives like ngIf, ngFor,etc...
+	We can create a custom directive using (ng g directive directivename). 
+	Basically is used for the same pattern design display in multiple component which we want to display and desgin on same logic/design. then we used directive.
+	By Default this directive register in app module.
+	so when we used then we need to writename like (ModulenameDirectiveName).
